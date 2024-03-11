@@ -1,0 +1,9 @@
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.csproj.AssemblyReference.cache
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.Properties.Resources.resources
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.csproj.GenerateResource.cache
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.csproj.CoreCompileInputs.cache
+C:\Users\roman\source\repos\LAB2\LAB2\bin\Debug\LAB2.exe.config
+C:\Users\roman\source\repos\LAB2\LAB2\bin\Debug\LAB2.exe
+C:\Users\roman\source\repos\LAB2\LAB2\bin\Debug\LAB2.pdb
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.exe
+C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.pdb

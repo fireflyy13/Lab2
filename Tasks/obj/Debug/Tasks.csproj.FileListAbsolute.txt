@@ -1,0 +1,7 @@
+C:\Users\roman\source\repos\Lab2\Tasks\bin\Debug\Tasks.exe.config
+C:\Users\roman\source\repos\Lab2\Tasks\bin\Debug\Tasks.exe
+C:\Users\roman\source\repos\Lab2\Tasks\bin\Debug\Tasks.pdb
+C:\Users\roman\source\repos\Lab2\Tasks\obj\Debug\Tasks.csproj.AssemblyReference.cache
+C:\Users\roman\source\repos\Lab2\Tasks\obj\Debug\Tasks.csproj.CoreCompileInputs.cache
+C:\Users\roman\source\repos\Lab2\Tasks\obj\Debug\Tasks.exe
+C:\Users\roman\source\repos\Lab2\Tasks\obj\Debug\Tasks.pdb
