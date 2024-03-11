@@ -7,3 +7,4 @@ C:\Users\roman\source\repos\LAB2\LAB2\bin\Debug\LAB2.exe
 C:\Users\roman\source\repos\LAB2\LAB2\bin\Debug\LAB2.pdb
 C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.exe
 C:\Users\roman\source\repos\LAB2\LAB2\obj\Debug\LAB2.pdb
+C:\Users\roman\source\repos\Lab2\LAB2\obj\Debug\LAB2.Form1.resources

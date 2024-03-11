@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static LAB2.Form1;
 using static System.Net.Mime.MediaTypeNames;
 
 
@@ -44,7 +45,7 @@ namespace LAB2
             g.AddEdge(4, 7);
             g.AddEdge(4, 9);
             g.AddEdge(5, 9);
-  
+
             g.AddDirEdge(1, 2);
             g.AddDirEdge(4, 2);
             g.AddDirEdge(2, 8);
@@ -126,7 +127,7 @@ namespace LAB2
                             break;
                     }
 
-                    color[j] = colorFound;  
+                    color[j] = colorFound;
 
                     for (int i = 0; i < v; i++)
                     {
@@ -164,7 +165,7 @@ namespace LAB2
             g2.AddDirEdge(4, 8);
             g2.AddDirEdge(10, 5);
 
-            int numColors = DSatur(v, g2.adj);
+            int numColors = DSatur(g2.adj, v);
 
             StringBuilder textBuilder = new StringBuilder();
             int edgeCounter = 1;
@@ -181,41 +182,57 @@ namespace LAB2
 
 
         }
-
-        public int DSatur(int v, List<int>[] adj)
+    
+        static bool Solution2(int i, List<int>[] adj, List<int> color, int v)
         {
-            int[] colors = new int[v];
-            for (int i = 0; i < v; i++)
+            if (i == adj.Length)
             {
-                colors[i] = -1;
+                return true;
             }
 
-            for (int j = 0; j < v; j++)
+            for (int j = 1; j <= v; j++)
             {
-                HashSet<int> usedColors = new HashSet<int>();
-
-                foreach (int neighbor in adj[j])
+                if (IsAppropriate(i, adj, color, j))
                 {
-                    if (colors[neighbor] != -1)
-                    {
-                        usedColors.Add(colors[neighbor]);
-                    }
-                }
+                    color[i] = j;
 
-                int color;
-                for (color = 1; ; color++)
-                {
-                    if (!usedColors.Contains(color))
+                    if (Solution2(i + 1, adj, color, v))
                     {
-                        colors[j] = color;
-                        break;
+                        return true;
                     }
+
+                    color[i] = 0;
+
                 }
             }
-            int chromaticNumber = colors.Max();
-            return chromaticNumber + 1;
+            return false;
+        }
+        static bool IsAppropriate(int i, List<int>[] adj, List<int> color, int j)
+        {
+            foreach (int neighbor in adj[i])
+            {
+                if (color[neighbor] == j)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        static int DSatur(List<int>[] adj, int v)
+                {
+            int l = adj.Length;
+
+            List<int> color = new List<int>(new int[l]);
+
+            if (!Solution2(0, adj, color, v))
+            {
+                return 0;
+            }
+
+            HashSet<int> uniqueColors = new HashSet<int>(color);
+            return uniqueColors.Count + 1;
+        }
         }
     }
 
-
-}
