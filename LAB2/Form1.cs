@@ -26,7 +26,7 @@ namespace LAB2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            panel1.Height = 68;
         }
 
         private void Method1_Click(object sender, EventArgs e)
@@ -50,7 +50,6 @@ namespace LAB2
             g.AddDirEdge(4, 2);
             g.AddDirEdge(2, 8);
             g.AddDirEdge(3, 7);
-            g.AddDirEdge(4, 8);
             g.AddDirEdge(10, 5);
 
             StringBuilder textBuilder = new StringBuilder();
@@ -67,8 +66,7 @@ namespace LAB2
             string text = textBuilder.ToString();
 
             int numColors = g.GraphColoring(v);
-
-            MessageBox.Show($"Матриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
+            MessageBox.Show($"Greedy Algorithm\n\nМатриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
 
         }
         public class Graph
@@ -162,7 +160,7 @@ namespace LAB2
             g2.AddDirEdge(4, 2);
             g2.AddDirEdge(2, 8);
             g2.AddDirEdge(3, 7);
-            g2.AddDirEdge(4, 8);
+       
             g2.AddDirEdge(10, 5);
 
             int numColors = DSatur(g2.adj, v);
@@ -178,7 +176,7 @@ namespace LAB2
                 }
             }
             string text = textBuilder.ToString();
-            MessageBox.Show($"Матриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
+            MessageBox.Show($"Backtracking algorithm\n\nМатриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
 
 
         }
@@ -233,6 +231,34 @@ namespace LAB2
             HashSet<int> uniqueColors = new HashSet<int>(color);
             return uniqueColors.Count + 1;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (panel1.Height == 160)
+            {
+                panel1.Height = 68;
+            }
+
+            else
+            {
+                panel1.Height = 160;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
 
