@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\roman\\Lab2\\",
+  "WorkspaceRootPath": "C:\\Users\\roman\\source\\repos\\Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|c:\\users\\roman\\lab2\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|c:\\users\\roman\\source\\repos\\lab2\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\Lab2\\lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\Lab2\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\source\\repos\\Lab2\\lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|LAB2||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\source\\repos\\Lab2\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\Lab2\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|C:\\Users\\roman\\source\\repos\\Lab2\\lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D883309F-9CE4-4CB8-BBC8-07F7E1DC0976}|LAB2\\LAB2.csproj|solutionrelative:lab2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|LAB2||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,67 +29,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LAB2",
-              "DocumentMoniker": "C:\\Users\\roman\\Lab2\\LAB2\\LAB2.csproj",
-              "RelativeDocumentMoniker": "LAB2\\LAB2.csproj",
-              "ToolTip": "C:\\Users\\roman\\Lab2\\LAB2\\LAB2.csproj",
-              "RelativeToolTip": "LAB2\\LAB2.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-03-11T12:21:17.972Z",
-              "IsPinned": true
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.cs",
+              "RelativeDocumentMoniker": "LAB2\\Form1.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.cs [Design]",
+              "RelativeToolTip": "LAB2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T16:13:42.317Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "LAB2",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\LAB2.csproj",
+              "RelativeDocumentMoniker": "LAB2\\LAB2.csproj",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\LAB2.csproj",
+              "RelativeToolTip": "LAB2\\LAB2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-11T12:21:17.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "LAB2\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.Designer.cs",
               "RelativeToolTip": "LAB2\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T00:01:10.795Z",
-              "IsPinned": true
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.cs",
               "RelativeDocumentMoniker": "LAB2\\Form1.cs",
-              "ToolTip": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Form1.cs",
               "RelativeToolTip": "LAB2\\Form1.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAswOEAAAAkAAAA",
+              "ViewState": "AQIAAG0AAAAAAAAAAADwv4kAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T23:58:29.869Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.cs",
-              "RelativeDocumentMoniker": "LAB2\\Form1.cs",
-              "ToolTip": "C:\\Users\\roman\\Lab2\\LAB2\\Form1.cs [Design]",
-              "RelativeToolTip": "LAB2\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T16:03:37.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\roman\\Lab2\\LAB2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Program.cs",
               "RelativeDocumentMoniker": "LAB2\\Program.cs",
-              "ToolTip": "C:\\Users\\roman\\Lab2\\LAB2\\Program.cs",
+              "ToolTip": "C:\\Users\\roman\\source\\repos\\Lab2\\LAB2\\Program.cs",
               "RelativeToolTip": "LAB2\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T23:57:58.311Z"
             }
