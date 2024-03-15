@@ -44,10 +44,15 @@ namespace LAB2
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(36, 427);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(261, 75);
             this.label1.TabIndex = 0;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Method2
             // 
@@ -67,7 +72,7 @@ namespace LAB2
             this.panel1.Controls.Add(this.Algorithms);
             this.panel1.Controls.Add(this.Method2);
             this.panel1.Controls.Add(this.Method1);
-            this.panel1.Location = new System.Drawing.Point(36, 226);
+            this.panel1.Location = new System.Drawing.Point(36, 198);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 197);
             this.panel1.TabIndex = 5;
@@ -102,7 +107,7 @@ namespace LAB2
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LAB2.Properties.Resources.Untitled_Diagram__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(336, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(333, 57);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(640, 580);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +120,7 @@ namespace LAB2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1043, 701);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);

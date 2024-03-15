@@ -12,8 +12,6 @@ using System.Windows.Forms.VisualStyles;
 using static LAB2.Form1;
 using static System.Net.Mime.MediaTypeNames;
 
-
-
 namespace LAB2
 {
     public partial class Form1 : Form
@@ -31,8 +29,6 @@ namespace LAB2
 
         private void Method1_Click(object sender, EventArgs e)
         {
-            var myForm = new Form1();
-            myForm.Show();
             int v = 11;
             Graph g = new Graph(v);
 
@@ -52,21 +48,10 @@ namespace LAB2
             g.AddDirEdge(3, 7);
             g.AddDirEdge(10, 5);
 
-            StringBuilder textBuilder = new StringBuilder();
-            int edgeCounter = 1;
-            for (int i = 0; i < v; i++)
-            {
-                foreach (var adjVertex in g.adj[i])
-                {
-                    textBuilder.AppendLine($"Ребро {edgeCounter}: ({i + 1}, {adjVertex + 1})");
-                    edgeCounter++;
-                }
-            }
-
-            string text = textBuilder.ToString();
-
             int numColors = g.GraphColoring(v);
-            MessageBox.Show($"Greedy Algorithm\n\nМатриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
+            label1.BackColor = Color.Ivory;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Text = ($"Жадібний алгоритм\nКількість типів \nкрамничок: {numColors}");
 
         }
         public class Graph
@@ -93,14 +78,14 @@ namespace LAB2
 
             public int GraphColoring(int v)
             {
-                int[] color = new int[v + 1];
+                int[] colors = new int[v + 1];
 
                 for (int i = 0; i < v; i++)
                 {
-                    color[i] = -1;
+                    colors[i] = -1;
                 }
 
-                color[0] = 0;
+                colors[0] = 0;
 
                 bool[] appropriate = new bool[v];
 
@@ -113,8 +98,8 @@ namespace LAB2
                 {
                     foreach (int k in adj[j])
                     {
-                        if (color[k] != -1)
-                            appropriate[color[k]] = false;
+                        if (colors[k] != -1)
+                            appropriate[colors[k]] = false;
                     }
 
 
@@ -125,7 +110,7 @@ namespace LAB2
                             break;
                     }
 
-                    color[j] = colorFound;
+                    colors[j] = colorFound;
 
                     for (int i = 0; i < v; i++)
                     {
@@ -133,7 +118,7 @@ namespace LAB2
                     }
                 }
 
-                HashSet<int> uniqueColors = new HashSet<int>(color);
+                HashSet<int> uniqueColors = new HashSet<int>(colors);
                 int numColors = uniqueColors.Count + 1;
                 return numColors;
 
@@ -142,8 +127,6 @@ namespace LAB2
         }
         private void Method2_Click(object sender, EventArgs e)
         {
-            var myForm = new Form1();
-            myForm.Show();
             int v = 11;
             Graph g2 = new Graph(v);
             g2.AddEdge(0, 3);
@@ -160,28 +143,17 @@ namespace LAB2
             g2.AddDirEdge(4, 2);
             g2.AddDirEdge(2, 8);
             g2.AddDirEdge(3, 7);
-       
+
             g2.AddDirEdge(10, 5);
 
-            int numColors = DSatur(g2.adj, v);
+            int numColors = Backtracking(g2.adj, v);
 
-            StringBuilder textBuilder = new StringBuilder();
-            int edgeCounter = 1;
-            for (int i = 0; i < v; i++)
-            {
-                foreach (var adjVertex in g2.adj[i])
-                {
-                    textBuilder.AppendLine($"Ребро {edgeCounter}: ({i + 1}, {adjVertex + 1})");
-                    edgeCounter++;
-                }
-            }
-            string text = textBuilder.ToString();
-            MessageBox.Show($"Backtracking algorithm\n\nМатриця суміжності:\n {text}\nКількість типів крамничок: {numColors}");
-
-
+            label1.BackColor = Color.Ivory;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Text = ($"Пошук з вертанням\nКількість типів \nкрамничок: {numColors}");
         }
-    
-        static bool Solution2(int i, List<int>[] adj, List<int> color, int v)
+
+        static bool Solution2(int i, List<int>[] adj, List<int> colors2, int v)
         {
             if (i == adj.Length)
             {
@@ -190,16 +162,16 @@ namespace LAB2
 
             for (int j = 1; j <= v; j++)
             {
-                if (IsAppropriate(i, adj, color, j))
+                if (IsAppropriate(i, adj, colors2, j))
                 {
-                    color[i] = j;
+                    colors2[i] = j;
 
-                    if (Solution2(i + 1, adj, color, v))
+                    if (Solution2(i + 1, adj, colors2, v))
                     {
                         return true;
                     }
 
-                    color[i] = 0;
+                    colors2[i] = 0;
 
                 }
             }
@@ -217,24 +189,24 @@ namespace LAB2
             return true;
         }
 
-        static int DSatur(List<int>[] adj, int v)
-                {
+        static int Backtracking(List<int>[] adj, int v)
+        {
             int l = adj.Length;
 
-            List<int> color = new List<int>(new int[l]);
+            List<int> colors2 = new List<int>(new int[l]);
 
-            if (!Solution2(0, adj, color, v))
+            if (!Solution2(0, adj, colors2, v))
             {
                 return 0;
             }
 
-            HashSet<int> uniqueColors = new HashSet<int>(color);
+            HashSet<int> uniqueColors = new HashSet<int>(colors2);
             return uniqueColors.Count + 1;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -259,6 +231,12 @@ namespace LAB2
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
+
 
