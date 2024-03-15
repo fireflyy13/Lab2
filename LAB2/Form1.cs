@@ -51,7 +51,7 @@ namespace LAB2
             int numColors = g.GraphColoring(v);
             label1.BackColor = Color.Ivory;
             label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Text = ($"Жадібний алгоритм\nКількість типів \nкрамничок: {numColors}");
+            label1.Text = ($"Обрано:\n Жадібний алгоритм\nКількість типів \nкрамничок: {numColors}");
 
         }
         public class Graph
@@ -78,7 +78,7 @@ namespace LAB2
 
             public int GraphColoring(int v)
             {
-                int[] colors = new int[v + 1];
+                int[] colors = new int[v];
 
                 for (int i = 0; i < v; i++)
                 {
@@ -150,7 +150,7 @@ namespace LAB2
 
             label1.BackColor = Color.Ivory;
             label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Text = ($"Пошук з вертанням\nКількість типів \nкрамничок: {numColors}");
+            label1.Text = ($"Обрано:\nПошук з вертанням\nКількість типів \nкрамничок: {numColors}");
         }
 
         static bool Solution2(int i, List<int>[] adj, List<int> colors2, int v)
@@ -219,11 +219,13 @@ namespace LAB2
             if (panel1.Height == 163)
             {
                 panel1.Height = 60;
+                label1.Visible = false;
             }
 
             else
             {
                 panel1.Height = 163;
+                label1.Visible = true;
             }
         }
 
