@@ -69,5 +69,15 @@ namespace LAB2.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2024_03_15_20_43_59 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2024-03-15_20-43-59", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
